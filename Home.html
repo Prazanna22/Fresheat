@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshEat</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+
+</head>
+
+<body>
+
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center">
+
+            <div class="w-1/2 md:w-1/5 flex justify-center items-center px-6 py-6">
+                <img src="assets/Hogist/red logo.png" alt="Logo" class="w-52">
+            </div>
+
+            <div class=" w-1/2 md:w-4/5 bg-white lg:bg-black text-white">
+
+                <div class="bg-red-500 justify-between text-white py-4 px-6 text-sm hidden lg:flex">
+                    <div class="font-normal flex items-center gap-2">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="text-gray-300 text-lg"> 8:00 am - 10:00 pm</p>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <p class="text-gray-300 text-lg font-normal">Follow Us :</p>
+                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex justify-end lg:justify-between items-center px-6 py-6">
+
+                    <nav class="lg:flex space-x-6 hidden">
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Home</a>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">About Us <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-red-600 font-medium hover:text-white text-black">About
+                                    Us 1</a>
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-red-600 font-medium hover:text-white text-black">About
+                                    Us 2</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Shop <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Shop</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Shop
+                                    Right Sidebar</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Shop
+                                    List</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Shop
+                                    List Right Sidebar</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Shop
+                                    Details</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Cart
+                                    List</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Checkout</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Wishlist</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Pages <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Chef</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Food
+                                    Menu</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Gallery</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Service</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Testimonials</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Reservation</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Faq's</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">my
+                                    Account</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">404
+                                    Page</a>
+
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Blog <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Blog</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Blog
+                                    Standard</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Blog
+                                    Left Sidebar</a>
+                                <a href="#"
+                                    class="block px-3 py-2  hover:bg-red-600 font-medium hover:text-white text-black">Blog
+                                    Details</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Contact Us <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-red-600 font-medium hover:text-white text-black">Contact
+                                    Us 01</a>
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-red-600 font-medium hover:text-white text-black">Contact
+                                    Us 02</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="flex gap-6 text-gray-700 text-lg">
+                        <button class="hover:text-red-500"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="hover:text-red-500"><i class="fas fa-search"></i></button>
+                        <button class="hover:text-red-500"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="bg-gray-100">
+
+
+        <div class="min-h-screen flex items-center justify-center relative banner-bg">
+            <div class="dark-overlay"></div>
+
+            <div class="blur-layer hidden md:flex">
+                <img src="assets/onion.png" alt="Onion" class="blurred onion-center">
+                <img src="assets/caps.png" alt="Leaf" class="blurred leaf-top-left">
+                <img src="assets/leaf.png" alt="Leaf" class="blurred leaf-top-right">
+                <img src="assets/chilli2.png" alt="Chili" class="blurred chili-bottom-left">
+                <img src="assets/chilli2.png" alt="Chili" class="blurred chili-bottom-right">
+            </div>
+
+
+            <div class="w-full mx-auto relative flex items-center z-10 px-10">
+                <div class="swiper banner-swiper flex items-center w-full">
+                    <div class="swiper-wrapper flex items-center w-full">
+                        <div class="swiper-slide flex items-center justify-between w-full ">
+                            <div class="text-white w-full md:w-1/2 pl-0 md:pl-10">
+                                <p class="md:text-3xl font-extrabold text-orange-500 text-xl">WELCOME FRESHEAT</p>
+                                <h1 class="text-6xl md:text-8xl font-extrabold mt-2 leading-tight uppercase">SPICY FRIED
+                                    CHICKEN</h1>
+                                <button
+                                    class="mt-4 bg-red-600 hover:bg-red-700 text-white text-semibold px-6 py-2 rounded-lg text-md shadow-md transition">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative  w-[700px] h-[700px] hidden md:flex justify-end overflow-hidden"
+                                data-tilt data-tilt-max="10">
+                                <img src="assets/banner3.png" alt="Crispy Wings" class="banner-img">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex items-center  justify-between w-full ">
+                            <div class="text-white w-full md:w-1/2 pl-0 md:pl-10">
+                                <p class="text-3xl font-extrabold text-orange-500">WELCOME FRESHEAT</p>
+                                <h1 class="text-6xl md:text-8xl font-extrabold mt-2 leading-tight uppercase">Chicago
+                                    Deep
+                                    Pizza King
+                                </h1>
+                                <button
+                                    class="mt-4 bg-red-600 hover:bg-red-700 text-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative  w-[700px] h-[700px] hidden md:flex justify-end overflow-hidden"
+                                data-tilt data-tilt-max="10">
+                                <img src="assets/banner2.png" alt="Crispy Wings" class="banner-img">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex items-center w-full ">
+                            <div class="text-white w-full md:w-1/2 pl-0 md:pl-10">
+                                <p class="text-3xl font-extrabold text-orange-500">WELCOME FRESHEAT</p>
+                                <h1 class="text-6xl md:text-8xl font-extrabold mt-2 leading-tight uppercase">Chicago
+                                    deep
+                                    burger king
+                                </h1>
+                                <button
+                                    class="mt-4 bg-red-600 hover:bg-red-700 text-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative  w-[700px] h-[700px] hidden md:flex justify-end overflow-visible"
+                                data-tilt data-tilt-max="10">
+                                <img src="assets/banner1.png" alt="Crispy Wings" class="banner-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- clients -->
+        <div class="bg-gray-100 py-10 px-10 lg:px-0">
+            <h1 class="text-center font-bold text-3xl">Our Happy Clients</h1>
+            <div class="relative flex justify-center items-center my-8">
+                <div class="swiper client-swiper w-[1200px]">
+                    <div class="swiper-wrapper flex items-center">
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/pepul.png" alt="Client 1" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/cavin.png" alt="Client 2" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/Johnson.png" alt="Client 3" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/equitas.png" alt="Client 4" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/Virtusa.png" alt="Client 5" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/behindwoods.png" alt="Client 6" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/pepul.png" alt="Client 1" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/cavin.png" alt="Client 2" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/Johnson.png" alt="Client 3" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/equitas.png" alt="Client 4" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/Virtusa.png" alt="Client 5" class="w-32">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="assets/clients/behindwoods.png" alt="Client 6" class="w-32">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img src="assets/pizza.png" alt="Pizza"
+                class="hidden lg:block absolute right-5 top-2 w-0 h-0 md:w-32 md:h-32 animate-bounce-custom">
+        </div>
+
+
+
+        <!-- <div class="flex justify-center px-20 w-full gap-6 ">
+            <div class="w-1/3">
+                <img src="assets//Hogist/2.png" alt="" class=" ">
+            </div>
+            <div class="text-justify w-2/3">
+                <h1 class="text-2xl text-orange-500 font-bold mb-2 uppercase ">Chennai's Best Online Catering Services:</h1>
+                <p class="my-4 leading-[35px]">
+                    Experience Exceptional Catering Services with Hogist Behind every unforgettable gathering is a trusted team that turns dreams into reality! 
+                    Hogist offers exceptional catering services tailored for every special occasion, ensuring a delightful dining experience for you and your guests. 
+                    From cozy baby showers to vibrant birthday feasts, our carefully curated menus feature a variety of dishes made with fresh, 
+                    high-quality ingredients. Whether it's a traditional feast or a modern spread, our team is dedicated to providing flavourful meals that perfectly 
+                    complement your celebration. We also offer special breakfast options, ideal for early gatherings, featuring a mix of South Indian delicacies and continental choices to start the day on a delicious note.
+                 </p>
+                    <p class="my-4 leading-[35px]"> For grand celebrations like housewarmings, weddings, and engagements, Hogist creates lavish, authentic feasts that leave a lasting impression and authentic menus. Our 
+                        wedding lunch and engagement menu selections include a variety of traditional dishes, ensuring a rich and memorable dining experience for
+                        your guests. We focus on quality, taste, and presentation, offering customized meal options to suit different cultural preferences and themes. 
+                        With impeccable service and a commitment to excellence, we bring the best flavors to your most cherished moments, making them truly unforgettable.  
+                    </p>
+                    <p class="my-4 leading-[35px]">
+                        Beyond personal celebrations, Hogist also caters to industrial and corporate dining needs with professionally curated meal plans. Our corporate
+                        dinner menus feature an array of dishes, from nutritious and wholesome meals to gourmet selections, designed to suit formal and informal business 
+                        gatherings. We understand the importance of timely service and consistency in quality, ensuring that employees, executives, and guests enjoy a satisfying
+                        dining experience. Whether it’s a one-time event or regular corporate catering, Hogist delivers excellence with every meal.
+                    </p>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-6 my-10 bg-gray-100 ">
+            <div class="flex bg-black p-5">
+                <div class="w-2/3 h-full">
+                    <p class="uppercase font-bold text-xs text-red-600 my-2">on this week</p>
+                    <h1 class="uppercase font-extrabold text-2xl text-white my-2">spicy fried chicken</h1>
+                    <p class=" font-semibold text-sm my-1 text-orange-400 my-2">limits time offer</p>
+                    <button class="uppercase py-2 px-4 bg-red-500 text-white font-bold mt-5">order now</button>
+                </div>
+                <div class="w-1/3 flex justify-center items-center">
+                    <img src="assets/thisweek3.png" alt="" class="w-30">
+                </div>
+            </div>
+            <div class="flex bg-black p-5">
+                <div class="w-2/3 h-full">
+                    <p class="uppercase font-bold text-xs text-red-600 my-2">on this week</p>
+                    <h1 class="uppercase font-extrabold text-2xl text-white my-2">spicy fried chicken</h1>
+                    <p class=" font-semibold text-sm my-1 text-orange-400 my-2">limits time offer</p>
+                    <button class="uppercase py-2 px-4 bg-red-500 text-white font-bold mt-5">order now</button>
+                </div>
+                <div class="w-1/3 flex justify-center items-center">
+                    <img src="assets/thisweek3.png" alt="" class="w-30">
+                </div>
+            </div>
+            <div class="flex bg-black p-5">
+                <div class="w-2/3 h-full">
+                    <p class="uppercase font-bold text-xs text-red-600 my-2">on this week</p>
+                    <h1 class="uppercase font-extrabold text-2xl text-white my-2">spicy fried chicken</h1>
+                    <p class=" font-semibold text-sm my-1 text-orange-400 my-2">limits time offer</p>
+                    <button class="uppercase py-2 px-4 bg-red-500 text-white font-bold mt-5">order now</button>
+                </div>
+                <div class="w-1/3 flex justify-center items-center">
+                    <img src="assets/thisweek3.png" alt="" class="w-30">
+                </div>
+            </div>
+
+        </div> -->
+
+<!-- aboutus -->
+        <div class="flex bg-white mx-5 sm:mx-10 md:mx-20 xl:mx-0 py-8 xl:py-0 rounded-lg my-6 ">
+            <div class="relative hidden xl:block w-1/4">
+                <img src="assets/Hogist//Habout4.jpg" alt="" class="w-[700px] h-[550px]">
+
+            </div>
+            <div class="flex justify-center items-center flex-col px-6 w-1/2">
+                
+                <h1 class=" text-2xl  text-center my-4 font-extrabold md:text-4xl">Customizable catering for Weddings, Parties, and Corporate events.
+                </h1>
+                <h1 class=" text-lg   text-center my-2 font-semibold md:text-lg">
+                    Let us bring the best flavors to your next event or workplace!
+                </h1>
+                <p class="text-gray-600 my-4  text-center text-justify leading-[32px]">No matter the occasion, food always takes center stage! Finding the best caterers in Chennai can be overwhelming, but Hogist makes it effortless 
+                    with our online catering services booking platform. Now, you can easily discover top-rated caterers near you offering both vegetarian and non-vegetarian 
+                    delicacies, tailored to your needs. The best part? You get the freedom to mix and match menu items from our extensive list, ensuring a perfect feast for 
+                    your event. Plus, you can select the exact quantity of dishes you need and even view real images of the meals before placing your order. Say goodbye to endless searches for “catering services near me” – Hogist is your one-stop solution for the best catering services in Chennai!</p>
+                <button
+                    class="uppercase py-2 px-4 bg-red-600 text-white font-semibold mt-5 flex items-center gap-2">order
+                    now <img src="assets/rightarrow.png" alt="" class="w-4  bg-white"></button>
+            </div>
+            <div class="relative hidden xl:block w-1/4">
+                <img src="assets/Hogist/fb.jpeg" alt="" class="w-[700px] h-[550px]">
+            </div>
+        </div>
+
+
+<!-- bestfoods -->
+        <div class="bg-gray-100 py-10">
+            <div class="flex items-center gap-2 justify-center">
+                <img src="assets/dinner.png" alt="" class="w-5">
+                <p class="text-orange-400 text-lg font-bold uppercase ">Best food</p>
+                <img src="assets/dinner.png" alt="" class="w-5">
+            </div>
+            <h1 class="text-2xl md:text-4xl font-bold text-center my-4 ">Popular Food Items</h1>
+
+            <div class="relative flex justify-center items-center">
+                <img src="assets/burger.png" alt="Burger"
+                    class="absolute left-1 w-20 h-20 md:w-30 md:h-30 lg:w-40 lg:h-40 animate-bounce-custom">
+
+                <div class="swiper custom-swiper  w-[200px] sm:w-[400px] md:w-[600px] xl:w-[1200px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white flex items-center flex-col p-5 rounded-lg  relative">
+
+                            <img src="assets/Hogist/cate2.jpg" alt="Dish 1" class=" relative w-full h-40">
+                            <div class="text-center">
+                                <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+                                <p class="text-gray-500 my-2">The Registration Fee</p>
+                                <p class="text-red-500 font-bold text-xl">$26.99</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white flex items-center flex-col p-5 rounded-lg  relative">
+
+                            <img src="assets/Hogist/cate3.jpg" alt="Dish 1" class=" relative w-full h-40">
+                            <div class="text-center">
+                                <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+                                <p class="text-gray-500 my-2">The Registration Fee</p>
+                                <p class="text-red-500 font-bold text-xl">$26.99</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white flex items-center flex-col p-5 rounded-lg  relative">
+
+                            <img src="assets/Hogist/cate4.jpg" alt="Dish 1" class=" relative w-full h-40">
+                            <div class="text-center">
+                                <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+                                <p class="text-gray-500 my-2">The Registration Fee</p>
+                                <p class="text-red-500 font-bold text-xl">$26.99</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white flex items-center flex-col p-5 rounded-lg  relative">
+
+                            <img src="assets/Hogist/cate5.jpg" alt="Dish 1" class=" relative w-full h-40">
+                            <div class="text-center">
+                                <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+                                <p class="text-gray-500 my-2">The Registration Fee</p>
+                                <p class="text-red-500 font-bold text-xl">$26.99</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white flex items-center flex-col p-5 rounded-lg  relative">
+
+                            <img src="assets/Hogist/cate6.jpg" alt="Dish 1" class=" relative w-full h-40">
+                            <div class="text-center">
+                                <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+                                <p class="text-gray-500 my-2">The Registration Fee</p>
+                                <p class="text-red-500 font-bold text-xl">$26.99</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <img src="assets/pizza.png" alt="Pizza"
+                    class="absolute right-5 top-2 w-20 h-20 md:w-40 md:h-40 animate-bounce-custom">
+            </div>
+        </div>
+
+        <!-- Popular -->
+        <div class="py-20">
+            <div class="flex items-center gap-2 justify-center">
+                <img src="assets/dinner.png" alt="" class="w-5">
+                <p class="text-orange-400 text-lg font-bold uppercase ">Services</p>
+                <img src="assets/dinner.png" alt="" class="w-5">
+            </div>
+            <div class="relative hidden xl:block">
+                <img src="assets/chilli.png" alt="" class="absolute z-10 -top-20 w-60 right-0">
+            </div>
+            <h1 class="text-2xl md:text-4xl  font-bold text-center my-4">All Catering services</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mx-10 mt-16 mb-24 ">
+                <!-- <div
+                    class="group bg-white flex items-center flex-col p-5 rounded-lg  relative overflow-hidden transition-all duration-300 hover:bg-[url('assets/1077.jpg')] hover:bg-cover hover:bg-center hover:text-white">
+                    <img src="assets/mrg.jpg" alt="Dish 1"
+                        class="w-full h-[140px] relative transition-opacity duration-300 ">
+                     <div class="absolute top-5 right-5 flex flex-col space-y-3">
+                        <button
+                            class="bg-white px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black hover:text-red-500">
+                            <i class="fa-regular fa-heart"></i></button>
+                        <div
+                            class="flex flex-col space-y-3 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <button class="bg-white  px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black"> <i
+                                    class="fas fa-shopping-cart"></i></button>
+                            <button class="bg-white  px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div> 
+                    <div class="text-center relative z-10">
+                        <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
+
+                    </div>
+                </div> -->
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/Hogist/10.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Marriage Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/Hogist/28.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Party Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/Hogist/6.jpeg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Corporate Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/Hogist/26.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Industrial Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/buffet catering/3.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Buffet Catering
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/breakfast/10.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
+                        </div>
+
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Breakfast Catering 
+                        </h1>
+                    </div>
+                </div>
+
+
+
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                  
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                        <img src="assets/Hogist/29.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Birthday Catering
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/25.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Event Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/6.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Evening Tea and Snacks Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/7.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Food Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/5.jpeg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Home Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/1.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Veg & Non-veg Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/23.png" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Outdoor Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/8.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Office Lunch Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/9.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            Special Catering
+                        </h1>
+                    </div>
+                </div>
+                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+                 
+                    <div class="relative w-full h-[240px] overflow-hidden">
+                  
+                        <img src="assets/Hogist/3.jpg" alt="Dish 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+             
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
+                            BBQ
+                        </h1>
+                    </div>
+                </div>
+                
+
+
+            </div>
+            <!-- <div class="flex justify-center items-center">
+                <button class="uppercase py-4 px-8 bg-red-600 text-white font-normal flex items-center gap-2">View all
+                    items<img src="assets/rightarrow.png" alt="" class="w-4  bg-white"></button>
+            </div> -->
+            <div class="relative hidden xl:block">
+                <img src="assets/mushroom.png" alt="" class="absolute z-10 -bottom-20 w-36 left-0">
+            </div>
+        </div>
+
+
+        <div class="relative ">
+            <img src="assets/leaf2.png" alt="" class="absolute top-0  hidden lg:block">
+            <img src="assets/tomato.png" alt="" class="absolute bottom-0 right-0  hidden lg:block">
+            <img src="assets/chilli3.png" alt="" class="absolute bottom-0 left-0  hidden lg:block">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-black  items-center py-20 px-10 md:px-20">
+                <div class="h-full z-10 order-2 md:order-1" data-aos="fade-up" data-aos-delay="400">
+                    <p class="uppercase font-bold  text-2xl text-red-600 my-2">Welcome freshmeat</p>
+                    <h1 class="uppercase font-extrabold text-6xl md:text-6xl text-white my-4 md:my-8">spicy fried
+                        chicken</h1>
+                    <p class=" font-semibold text-xl my-1 text-orange-400 my-2">Limits Time Offer</p>
+                    <button
+                        class="uppercase py-4 px-8 bg-red-600 text-white font-semibold mt-10 flex items-center gap-2 ">order
+                        now <img src="assets/rightarrow.png" alt="" class="w-4  bg-white "></button>
+                </div>
+                <div class="flex justify-center items-center order-1 md:order-2">
+                    <img src="assets/pizza2.png" alt="" class="w-[500px] lg:w-[600px]" data-aos="fade-left"
+                        data-aos-delay="400">
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="bg-white mx-10 sm:mx-20 rounded-3xl outline-none py-10">
+            <div class="flex items-center gap-2 justify-center">
+                <img src="assets/dinner.png" alt="" class="w-5">
+                <p class="text-orange-400 text-lg font-bold uppercase ">Food Menu</p>
+                <img src="assets/dinner.png" alt="" class="w-5">
+            </div>
+            <h1 class="text-2xl md:text-4xl  font-bold text-center my-4">Fresheat Foods Menu</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 px-4 md:px-10  py-10">
+
+                <div
+                    class="flex items-center justify-center md:border md:border-r-gray-400 md:border-y-white md:border-l-white gap-4 my-3 lg:my-0 ">
+                    <img src="assets/menuicon1.png" alt="">
+                    <p class="font-semibold md:text-xl text-md">Fast Food</p>
+                </div>
+                <div
+                    class="flex items-center justify-center md:border md:border-r-gray-400 md:border-y-white md:border-l-white gap-4 my-3 lg:my-0 ">
+                    <img src="assets/menuicon2.png" alt="">
+                    <p class="font-semibold md:text-xl text-md">Drink & Juice</p>
+                </div>
+                <div
+                    class="flex items-center justify-center md:border md:border-r-gray-400 md:border-y-white md:border-l-white gap-4 my-3 lg:my-0 ">
+                    <img src="assets/menuicon3.png" alt="">
+                    <p class="font-semibold md:text-xl text-md">Chicken Pizza</p>
+                </div>
+                <div class="flex items-center justify-center gap-4 my-3 lg:my-0 ">
+                    <img src="assets/menuicon4.png" alt="">
+                    <p class="font-semibold md:text-xl text-md">Fresh Pasta</p>
+                </div>
+            </div>
+            <div class="py-[0.5px] bg-gray-400 mx-10"></div>
+            <div class="grid md:grid-cols-2 grid-cols-1 justify-center px-4 md:px-10">
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/chickenpasta.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Chinese Pasta</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $15.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/friedrice.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Chicken Fried Rice</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $25.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/chickenpizza.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Chicken Pizza</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $115.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/noodles.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Chicken Noodles</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $154.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/legpiece.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Grilled Chicken</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $55.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/egg.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Egg And Cucumber</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $65.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/whiterice.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Chicken White Rice</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $135.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/spatialbarger.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Spatial Burger</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $95.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/vegburger.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Vegetables Burger</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $75.99
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 items-center my-4 gap-4">
+                    <div class="flex justify-center col-span-1">
+                        <img src="assets/menu/breif.png" alt="" class="w-20 lg:w-24 ">
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 mx-4">
+                        <h1 class="font-semibold text-xl lg:text-2xl my-2 ">Brief Chicken</h1>
+                        <p class="text-gray-500">It's a testament of our.</p>
+                    </div>
+                    <div class="flex justify-center  col-span-1">
+                        <h1 class="font-semibold text-xl   sm:mt-2">
+                            $44.99
+                        </h1>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Sample -->
+        <div class="overflow-hidden whitespace-nowrap relative w-full py-20 ">
+            <div class="marquee flex gap-20">
+                <span class="menu-item">Burger</span>
+                <span class="menu-item">Chicken Pizza</span>
+                <span class="menu-item">Fresh Pasta</span>
+                <span class="menu-item">Grilled Chicken</span>
+                <span class="menu-item">Burger</span>
+            </div>
+        </div>
+        <!-- Offer -->
+        <div class="grid lg:grid-cols-2 grid-cols-1 min-h-screen bg-black px-20 pt-10 md:px-10  ">
+            <div class="flex items-end justify-center px-5">
+                <img src="assets/burger2.png" alt="Burger Image"
+                    class="max-w-full  sm:max-w-md md:max-w-lg lg:max-w-full">
+            </div>
+
+
+            <div class="relative flex justify-center items-center">
+                <div
+                    class="w-full md:w-2/3 bg-white/30 backdrop-blur-lg p-8 rounded-lg text-center border border-white/20">
+                    <div class="flex items-center gap-2 justify-center">
+                        <img src="assets/dinner.png" alt="Dinner Icon" class="w-5">
+                        <p class="text-orange-400 text-lg font-bold uppercase">Special Offer</p>
+                        <img src="assets/dinner.png" alt="Dinner Icon" class="w-5">
+                    </div>
+
+                    <h1 class="text-xl md:text-3xl font-bold my-4 text-white">Get 30% Discount on Every Item</h1>
+
+                    <form id="orderForm" class="grid sm:grid-cols-2 grid-cols-1 gap-10 my-10 text-left">
+                        <div>
+                            <input type="text" id="name"
+                                class="w-full p-2 rounded border border-gray-300 focus:outline-none"
+                                placeholder="Full Name" required>
+                        </div>
+                        <div>
+                            <input type="text" id="number"
+                                class="w-full p-2 rounded border border-gray-300 focus:outline-none"
+                                placeholder="Phone Number" required pattern="\d{10}">
+                        </div>
+                        <div>
+                            <input type="number" id="count"
+                                class="w-full p-2 rounded border border-gray-300 focus:outline-none" placeholder="Count"
+                                required min="1">
+                        </div>
+                        <div>
+                            <input type="text" id="location"
+                                class="w-full p-2 rounded border border-gray-300 focus:outline-none"
+                                placeholder="Location" required>
+                        </div>
+                        <div class="sm:col-span-2 flex justify-center">
+                            <button type="submit"
+                                class="uppercase py-4 px-8 bg-red-600 text-white font-normal flex items-center gap-2 hover:bg-red-700">
+                                Submit Order
+                                <img src="assets/rightarrow.png" alt="" class="w-4 bg-white">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- chef -->
+        <div class="pt-10 bg-gray-100">
+            <div class="flex items-center gap-2 justify-center">
+                <img src="assets/dinner.png" alt="" class="w-5">
+                <p class="text-orange-400 text-lg font-bold uppercase ">Our Chefe </p>
+                <img src="assets/dinner.png" alt="" class="w-5">
+            </div>
+            <h1 class="text-2xl md:text-4xl  font-bold text-center my-4">Meet Our Expert Chefe</h1>
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-20 md:pt-40">
+                    <!-- Chef Card 1 -->
+                    <div
+                        class="relative bg-white p-6 sm:p-8 rounded-t-full shadow-lg w-full h-full max-h-[300px] md:max-h-[350px] max-w-[400px] mx-auto overflow-visible mb-24 sm:mb-32 lg:mb-40">
+                        <!-- Chef Image (Half Inside, Half Outside) -->
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 -top-10 sm:-top-20 w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72">
+                            <img src="assets/chef1.png" alt="Chef" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Name & Role -->
+                        <div class="text-center mt-36 sm:mt-40 lg:mt-48">
+                            <h3 class="text-lg sm:text-xl my-2 font-semibold">Ralph Edwards</h3>
+                            <p class="text-gray-500">Chef Lead</p>
+                        </div>
+
+                        <!-- Share Button & Social Icons -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-32 sm:top-36 lg:top-40 -bottom-6">
+                            <div class="relative">
+                                <!-- Share Button -->
+                                <button
+                                    class="w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-full hover:bg-gray-700 transition group/share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+
+                                <!-- Social Icons (Appear on Share Button Hover) -->
+                                <div
+                                    class="absolute left-1/2 -translate-x-1/2 bottom-0 flex gap-16 opacity-0 group-hover/share:opacity-100 transition-all duration-300">
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chef Card 2 -->
+                    <div
+                        class="relative bg-white p-6 sm:p-8 rounded-t-full shadow-lg w-full h-full max-h-[300px] md:max-h-[350px] max-w-[400px] mx-auto overflow-visible mb-24 sm:mb-32 lg:mb-40">
+                        <!-- Chef Image (Half Inside, Half Outside) -->
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 -top-10 sm:-top-20 w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72">
+                            <img src="assets/chef2.png" alt="Chef" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Name & Role -->
+                        <div class="text-center mt-36 sm:mt-40 lg:mt-48">
+                            <h3 class="text-lg sm:text-xl my-2 font-semibold">Leslie Alexander</h3>
+                            <p class="text-gray-500">Chef Assistant</p>
+                        </div>
+
+                        <!-- Share Button & Social Icons -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-32 sm:top-36 lg:top-40 -bottom-6">
+                            <div class="relative">
+                                <!-- Share Button -->
+                                <button
+                                    class="w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-full hover:bg-gray-700 transition group/share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+
+                                <!-- Social Icons (Appear on Share Button Hover) -->
+                                <div
+                                    class="absolute left-1/2 -translate-x-1/2 bottom-0 flex gap-16 opacity-0 group-hover/share:opacity-100 transition-all duration-300">
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chef Card 3 -->
+                    <div
+                        class="relative bg-white p-6 sm:p-8 rounded-t-full shadow-lg w-full h-full max-h-[300px] md:max-h-[350px] max-w-[400px] mx-auto overflow-visible mb-24 sm:mb-32 lg:mb-40">
+                        <!-- Chef Image (Half Inside, Half Outside) -->
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 -top-10 sm:-top-20 w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72">
+                            <img src="assets/chef3.png" alt="Chef" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Name & Role -->
+                        <div class="text-center mt-36 sm:mt-40 lg:mt-48">
+                            <h3 class="text-lg sm:text-xl my-2 font-semibold">Ronald Richards</h3>
+                            <p class="text-gray-500">Chef Assistant</p>
+                        </div>
+
+                        <!-- Share Button & Social Icons -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-32 sm:top-36 lg:top-40 -bottom-6">
+                            <div class="relative">
+                                <!-- Share Button -->
+                                <button
+                                    class="w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-full hover:bg-gray-700 transition group/share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+
+                                <!-- Social Icons (Appear on Share Button Hover) -->
+                                <div
+                                    class="absolute left-1/2 -translate-x-1/2 bottom-0 flex gap-16 opacity-0 group-hover/share:opacity-100 transition-all duration-300">
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 bg-white text-black flex items-center justify-center rounded-full">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <!-- testimonial -->
+    <div class="relative flex w-full min-h-screen bg-black flex-col">
+        <img src="assets/testimonil1.png" alt="" class="hidden lg:block lg:absolute lg:right-0 lg:top-40">
+
+        <!-- Background Section -->
+        <div class="w-full xl:w-2/3 h-screen bg-no-repeat bg-contain "
+            style="background-image: url('assets/testimonial.png');"></div>
+
+
+        <!-- Swiper Section (Using Grid) -->
+        <div class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 p-4 items-center lg:px-40 xl:px-60">
+            <div></div>
+            <div class="flex justify-center items-center flex-col">
+                <div class="flex items-center gap-2 justify-center">
+                    <img src="assets/dinner.png" alt="" class="w-5">
+                    <p class="text-orange-400 text-lg font-bold uppercase ">Testimonials</p>
+                    <img src="assets/dinner.png" alt="" class="w-5">
+                </div>
+                <h1 class="text-4xl font-bold text-center my-6 text-white">What our Clients Say</h1>
+                <div class="swiper mySwiper testimonial-swiper w-full max-w-2xl">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-2">
+                                <div>
+                                    <h1 class="text-2xl font-bold">Brinda Ghanesh</h1>
+                                    <p class="text-md  my-2 text-gray-500"></p>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                For the first time we came across someone from online who were very professional
+                                from taking the food order, specifying the tariff and dispatching the food delivery
+                                on time. Food was very tasty and maintained good standards. Pricing was reasonably
+                                good and best service. Thanks to Hogist team for Organizing dinner menu for our
+                                Anniversary party for 50 members.
+                                I give 5 star ratings..
+                            </p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-4">
+
+                                <div>
+                                    <h1 class="text-2xl font-bold">JANOSE BERDEEN I</h1>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                Hi I am JANOSE BERDEEN from chennai, Professional approach, decent pricing,
+                                excellent quality of food with commitment on the timings. Hassle-free Ordering
+                                experience. Hogist, the best small party catering services in chennai ever
+                                experienced.
+
+                            </p>
+                        </div>
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-2">
+                                <div>
+                                    <h1 class="text-2xl font-bold">Mr. Sanzeeth</h1>
+                                    <p class="text-md  my-2 text-gray-500"></p>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star2.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                When it comes to corporate catering in chennai. I would recommend 100% Hogist. Their
+                                service and industrial catering app would helps us getting good quality and food and
+                                save our time.
+
+                            </p>
+                        </div>
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-2">
+                                <div>
+                                    <h1 class="text-2xl font-bold">yamunashankar krishnan</h1>
+                                    <p class="text-md  my-2 text-gray-500"></p>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                Food was excellent.... i will reach out to them even for the upcoming events. The
+                                foods were clean, tasty and also was on time with quality.
+                                Kudos to the Hogist team.speacial mention Mrs.Renuka for the arrangements and Mr
+                                Alex and Satish for the timely delivery.
+
+                            </p>
+                        </div>
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-2">
+                                <div>
+                                    <h1 class="text-2xl font-bold">swati menon</h1>
+                                    <p class="text-md  my-2 text-gray-500"></p>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                Recently we had a small bday party at home for just 20 people and we're struggling
+                                to get the catering done for the same. Then we came across Hogist and then got in
+                                touch with them. They were blessing in disguise.
+                                They provided amazing food and the service was also great. The delivered the food on
+                                time and all our guests loved the food. The food was delicious and yummy. Thank you
+                                so much.
+
+                            </p>
+                        </div>
+                        <div class="swiper-slide bg-white text-black p-10 rounded-lg  flex flex-col gap-6">
+                            <div class="flex items-center gap-2">
+                                <div>
+                                    <h1 class="text-2xl font-bold">Srinivasa Sampathkumar</h1>
+                                    <p class="text-md  my-2 text-gray-500"></p>
+                                    <div class="flex gap-1">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                        <img src="assets/star1.png" alt="" class="w-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-md text-gray-500 text-justify ">
+                                The food is excellent and service is also super taste and today bread halwa is very
+                                very tasty. All variety rice, raasam, kara Kulzambu and vegetables are good taste
+                                and serve in hot conditions. Butter milk is good really. Over all I love the food
+                                taste, presentation, service and conditions all excellent to the core.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Swiper Pagination -->
+                    <div class="swiper-pagination mt-4"></div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="flex justify-center gap-4 mt-4">
+                        <button class="prev border-2 border-red-600 text-white p-4 rounded-full"><img
+                                src="assets/rightarrow.png" alt="" class="w-6 rotate-180"></button>
+                        <button class="next bg-red-600 text-white p-4  rounded-full"><img src="assets/next.png" alt=""
+                                class="w-6"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Sample -->
+    <div class="overflow-hidden whitespace-nowrap relative w-full py-20 bg-black ">
+        <div class="marquee flex gap-20">
+            <span class="menu-item1">Burger</span>
+            <span class="menu-item1">Chicken Pizza</span>
+            <span class="menu-item1">Fresh Pasta</span>
+            <span class="menu-item1">Grilled Chicken</span>
+            <span class="menu-item1">Burger</span>
+        </div>
+    </div>
+
+    <!-- News -->
+    <div class="bg-gray-100 py-10 px-10 lg:px-0">
+        <div class="flex items-center gap-2 justify-center">
+            <img src="assets/dinner.png" alt="" class="w-5">
+            <p class="text-orange-400 text-lg font-bold uppercase ">Latest News</p>
+            <img src="assets/dinner.png" alt="" class="w-5">
+        </div>
+        <h1 class="text-4xl font-bold text-center my-4">Our Latest Food News</h1>
+
+        <div class="relative flex justify-center items-center my-8">
+            <img src="assets/burger.png" alt="Burger"
+                class="absolute left-1 w-20 h-20 md:w-30 md:h-30 lg:w-40 lg:h-40 animate-bounce-custom">
+
+            <div class="swiper menu-swiper w-full max-w-[1200px] ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news1.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">15</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Fast Food Frency A Taste of Convenience</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news2.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">17</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Benefits of Health and Safety Measures</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news3.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">25</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Quick Cravings Unraveling Fast Food Delights</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news1.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">15</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Fast Food Frency A Taste of Convenience</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news2.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">17</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Benefits of Health and Safety Measures</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/news3.jpg" alt="Dish 4" class="w-full h-auto  ">
+                        <div class="grid grid-cols-3 w-full">
+                            <div class="bg-[#ff0000] py-2  m-6 flex justify-center items-center flex-col text-white">
+                                <p class="text-2xl font-bold">25</p>
+                                <p class="text-md font-medium">Dec</p>
+                            </div>
+                            <div class="flex items-center justify-center p-3">
+                                <img src="assets/user.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">By Admin</p>
+                            </div>
+                            <div class="flex items-center justify-center  gap-2 p-3">
+                                <img src="assets/tag.png" alt="" class="w-5">
+                                <p class="text-xs font-medium">Noodles</p>
+                            </div>
+                        </div>
+                        <div class="mx-6 ">
+                            <h1 class=" font-bold text-2xl">Quick Cravings Unraveling Fast Food Delights</h1>
+                            <div class="flex gap-2 items-center my-4">
+                                <p class=" text-gray-600 ">Read More </p>
+                                <img src="assets/up.png" alt="" class="w-3 h-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/pizza.png" alt="Pizza"
+                class="absolute right-5 top-2 w-20 h-20 md:w-40 md:h-40 animate-bounce-custom">
+        </div>
+    </div>
+
+
+    <!-- gallery -->
+    <div class="bg-gray-100 pt-10 px-10 lg:px-0">
+
+        <div class="relative flex justify-center items-center my-8">
+
+            <div class="swiper gallery-swiper w-full  ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery1.jpg" alt="Dish 4" class="w-full h-auto  ">
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery2.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery3.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery4.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery5.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery1.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery2.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery3.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery4.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                    <div class="swiper-slide bg-white flex items-center flex-col   pb-5">
+                        <img src="assets/gallery5.jpg" alt="Dish 4" class="w-full h-auto  ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#010f1c] py-10 px-10 md:px-20 pb-32">
+        <div
+            class="grid  grid-cols-1  lg:grid-cols-3  items-center gap-5 py-12 lg:mx-10 bg-orange-500 rounded-2xl my-10 p-5">
+            <div class="flex items-center lg:justify-center gap-4">
+                <div class=" bg-white rounded-full p-2">
+                    <img src="assets/map.png" alt="" class="w-6 h-6  ">
+                </div>
+                <div class="flex flex-col ">
+                    <p class="font-medium text-md text-white ">Address</p>
+                    <h1 class="font-medium text-xl text-white ">2nd Floor, Kakani Towers, No:34 Khader Nawaz Khan
+                        Road,Nungambakkam, Chennai 600 006.</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 lg:justify-center ">
+                <div class=" bg-white rounded-full p-2">
+                    <img src="assets/email.png" alt="" class="w-6 h-6  ">
+                </div>
+                <div class="flex flex-col ">
+                    <p class="font-medium text-md text-white ">Send Email</p>
+                    <h1 class="font-medium text-xl text-white ">Support@hogist.com</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 lg:justify-center ">
+                <div class=" bg-white rounded-full p-2">
+                    <img src="assets/viber.png" alt="" class="w-6 h-6  ">
+                </div>
+                <div class="flex flex-col ">
+                    <p class="font-medium text-md text-white ">Call Emergency</p>
+                    <h1 class="font-medium text-xl text-white ">+91-99626-67733</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-10">
+            <div class="flex flex-col justify-start items-start mt-4">
+                <img src="assets/hogist logo.png" alt="" class="w-60">
+                <p class="text-gray-300 w-72 my-8">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a
+                    lacinia curabitur lacinia mollis</p>
+            </div>
+            <div class="flex flex-col justify-start items-start">
+                <h1 class="font-bold text-white text-2xl my-3">Quick Links</h1>
+                <div class="flex items-center  group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">About Us</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Our Gallery</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Our Blogs</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">FAQ'S</p>
+                </div>
+                <div class="flex items-center  group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Contact Us</p>
+                </div>
+
+
+            </div>
+            <div class="flex flex-col justify-start items-start">
+                <h1 class="font-bold text-white text-2xl my-3">Our Menu</h1>
+                <div class="flex items-center  group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Burger King</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Pizza King</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Fresh Food</p>
+                </div>
+                <div class="flex items-center group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Vegetables</p>
+                </div>
+                <div class="flex items-center  group gap-2">
+                    <svg class="w-6 h-6 fill-white group-hover:fill-red-600" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24">
+                        <path
+                            d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z" />
+                        <path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z" />
+                    </svg>
+                    <p class="font-semibold text-white text-lg my-2 group-hover:text-red-600">Desserts</p>
+                </div>
+
+
+            </div>
+            <div class="flex flex-col justify-start items-start">
+                <h1 class="font-bold text-white text-2xl my-3">Contact Us</h1>
+                <p class="text-gray-400 my-2">Monday - Friday: <span class="text-orange-400">8am - 4pm</span></p>
+                <p class="text-gray-400 my-2">Saturday: <span class="text-orange-400">8am - 12am</span></p>
+                <div class="relative w-full max-w-sm my-4">
+                    <input type="text" placeholder="Your Email Address"
+                        class="w-full py-3 pl-4 pr-12 border border-gray-300 rounded-lg outline-none">
+                    <button class="absolute inset-y-0 right-2 flex items-center bg-orange-400 p-2 my-2 rounded-lg">
+                        <img src="assets/next.png" alt="Arrow" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="flex gap-2 items-center my-2">
+                    <input type="checkbox" class="w-4 h-4 accent-red-500">
+                    <label for="" class="text-white text-md font-medium ">I agree to the Privacy Policy.</label>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 text-white px-10 md:px-20 py-6 bg-red-600 gap-6">
+        <div class="flex justify-center md:justify-start items-center">© All Copyright 2024 by FreshEat</div>
+        <div class="flex  justify-center md:justify-end gap-6 md:gap-10">
+            <button class="p-2 border border-white rounded-xl text-sm">Terms & Conditions</button>
+            <button class="p-2 border border-white rounded-xl text-sm">Privacy Policy</button>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        var bannerSwiper = new Swiper(".banner-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            }
+        });
+
+        new Swiper(".custom-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 4,
+            spaceBetween: 30,
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                540: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 },
+            }
+        });
+        new Swiper(".menu-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loopFillGroupWithBlank: 3,
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                540: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            }
+        });
+        new Swiper(".gallery-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loopFillGroupWithBlank: 3,
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                540: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 5 },
+            }
+        });
+        new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+        });
+        new Swiper(".client-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            slidesPerView: 5,
+            spaceBetween: 10,
+            loopFillGroupWithBlank: 3,
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                540: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 6 },
+            }
+        });
+        document.getElementById("orderForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value.trim();
+            let number = document.getElementById("number").value.trim();
+            let count = document.getElementById("count").value.trim();
+            let location = document.getElementById("location").value.trim();
+
+            if (name === "" || number === "" || count === "" || location === "") {
+                alert("All fields are required!");
+                return;
+            }
+
+            if (!/^\d{10}$/.test(number)) {
+                alert("Please enter a valid 10-digit number.");
+                return;
+            }
+
+            if (parseInt(count) <= 0) {
+                alert("Count must be at least 1.");
+                return;
+            }
+
+            alert("Order submitted successfully!");
+        });
+
+
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+            max: 10,
+            speed: 400,
+            "max-glare": 0.3
+        });
+        <!-- AOS JS -->
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
