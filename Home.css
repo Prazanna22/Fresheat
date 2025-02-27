@@ -39,7 +39,7 @@
 
 .blurred {
     filter: blur(1px);
-    opacity: 0.7;
+    opacity: 5.5;
     position: absolute;
 }
 
@@ -198,7 +198,7 @@
 }
 
 .onion-center {
-    top: 60%;
+    top: 55%;
     left: 40%;
     transform: translate(-50%, -50%);
     width: 150px;
@@ -206,15 +206,15 @@
 }
 
 .leaf-top-left {
-    top: 10px;
+    top: 20px;
     left: 20px;
     width: 100px;
     animation: bounceLeftRight 3s infinite;
 }
 
 .leaf-top-right {
-    top: 10px;
-    right: 20px;
+    top: 50px;
+    right: 100px;
     width: 100px;
     animation: bounceLeftRight 3s infinite;
 }
