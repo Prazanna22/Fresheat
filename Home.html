@@ -33,20 +33,35 @@
 
             <div class=" w-1/2 md:w-4/5 bg-white lg:bg-black text-white">
 
-                <div class="bg-[#dd0902] justify-between text-white py-4 px-6 text-sm hidden lg:flex">
-                    <div class="font-normal flex items-center gap-2">
-                        <i class="fa-regular fa-clock"></i>
-                        <p class="text-gray-300 text-lg"> 8:00 am - 10:00 pm</p>
-                    </div>
-
-                    <div class="flex gap-6">
-                        <p class="text-gray-300 text-lg font-normal">Follow Us :</p>
-                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-gray-300 text-xl"><i class="fab fa-linkedin"></i></a>
+                <div class="bg-[#dd0902] text-white py-4  text-sm hidden lg:flex overflow-hidden">
+                    <div class="marquee-container">
+                        <div class="marquee text-xl flex gap-20 mx-10">
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                        </div>
+                        <div class="marquee text-xl flex gap-20 mx-10">
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                            <span>Hogist</span>
+                        </div>
                     </div>
                 </div>
+                
 
                 <div class="flex justify-end lg:justify-between items-center px-6 py-6">
 
@@ -153,9 +168,7 @@
                     </nav>
 
                     <div class="flex gap-6 text-gray-700 text-lg">
-                        <button class="hover:text-red-500"><i class="fas fa-shopping-cart"></i></button>
-                        <button class="hover:text-red-500"><i class="fas fa-search"></i></button>
-                        <button class="hover:text-red-500"><i class="fas fa-bars"></i></button>
+                        <button class="hover:text-red-500 text-gray-400"><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
             </div>
@@ -340,8 +353,6 @@
         </div>
 
 
-
-
         <!-- <div class="flex justify-center px-20 w-full gap-6 ">
             <div class="w-1/3">
                 <img src="assets//Hogist/2.png" alt="" class=" ">
@@ -511,369 +522,193 @@
 
         <!-- service -->
         <div class="py-10">
-            <div class="flex items-center gap-2 justify-center">
+            <div class="flex items-center gap-2 justify-center" data-aos="fade-down" data-aos-duration="1000">
                 <img src="assets/dinner.png" alt="" class="w-5">
-                <p class="text-orange-400 text-lg font-bold uppercase ">Services</p>
+                <p class="text-orange-400 text-lg font-bold uppercase">Services</p>
                 <img src="assets/dinner.png" alt="" class="w-5">
             </div>
             <div class="relative hidden xl:block">
-                <img src="assets/chilli.png" alt="" class="absolute z-10 -top-20 w-60 right-0">
+                <img src="assets/chilli.png" alt="" class="absolute z-10 -top-20 w-60 right-0" data-aos="fade-up" data-aos-duration="1200">
             </div>
-            <h1 class="text-2xl md:text-4xl  font-bold text-center my-4">Catering services for all your events</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mx-10 mt-16 mb-24 ">
-                <!-- <div
-                    class="group bg-white flex items-center flex-col p-5 rounded-lg  relative overflow-hidden transition-all duration-300 hover:bg-[url('assets/1077.jpg')] hover:bg-cover hover:bg-center hover:text-white">
-                    <img src="assets/mrg.jpg" alt="Dish 1"
-                        class="w-full h-[140px] relative transition-opacity duration-300 ">
-                     <div class="absolute top-5 right-5 flex flex-col space-y-3">
-                        <button
-                            class="bg-white px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black hover:text-red-500">
-                            <i class="fa-regular fa-heart"></i></button>
-                        <div
-                            class="flex flex-col space-y-3 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                            <button class="bg-white  px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black"> <i
-                                    class="fas fa-shopping-cart"></i></button>
-                            <button class="bg-white  px-2 py-1 rounded-full shadow-md hover:bg-gray-200 text-black"><i
-                                    class="fas fa-search"></i></button>
-                        </div>
-                    </div> 
-                    <div class="text-center relative z-10">
-                        <h1 class="text-lg font-bold my-2">Chicken Pizza</h1>
-
-                    </div>
-                </div> -->
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+            <h1 class="text-2xl md:text-4xl font-bold text-center my-4" data-aos="fade-down" data-aos-duration="1000">Catering services for all your events</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mx-10 mt-16 mb-24">
+                <!-- Card 1 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/Hogist/11.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Marriage Catering
-                        </h1>
+                        <img src="assets/Hogist/11.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Marriage Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 2 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/Hogist/28.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Party Catering
-                        </h1>
+                        <img src="assets/Hogist/28.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Party Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 3 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/Hogist/6.jpeg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Corporate Catering
-                        </h1>
+                        <img src="assets/Hogist/6.jpeg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Corporate Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 4 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/Hogist/15.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Industrial Catering
-                        </h1>
+                        <img src="assets/Hogist/15.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Industrial Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 5 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/buffet catering/3.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Buffet Catering
-                        </h1>
+                        <img src="assets/buffet catering/3.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Buffet Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
+        
+                <!-- Card 6 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/breakfast/10.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Breakfast Catering
-                        </h1>
+                        <img src="assets/breakfast/10.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Breakfast Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 7 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     <div class="relative w-full h-[240px] overflow-hidden">
-                        <img src="assets/Hogist/29.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Birthday Catering
-                        </h1>
+                        <img src="assets/Hogist/29.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Birthday Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 8 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/25.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Event Catering
-                        </h1>
+                        <img src="assets/Hogist/25.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Event Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 9 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/6.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Evening Tea and Snacks Catering
-                        </h1>
+                        <img src="assets/Hogist/6.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Evening Tea and Snacks Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 10 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/12.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Food Catering
-                        </h1>
+                        <img src="assets/Hogist/12.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Food Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 11 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/13.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Home Catering
-                        </h1>
+                        <img src="assets/Hogist/13.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Home Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 12 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/1.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Veg & Non-veg Catering
-                        </h1>
+                        <img src="assets/Hogist/1.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Veg & Non-veg Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 13 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/23.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Outdoor Catering
-                        </h1>
+                        <img src="assets/Hogist/23.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Outdoor Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 14 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1300">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/8.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Office Lunch Catering
-                        </h1>
+                        <img src="assets/Hogist/8.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Office Lunch Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 15 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1400">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/9.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Special Catering
-                        </h1>
+                        <img src="assets/Hogist/9.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Special Catering</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 16 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1500">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/17.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Kebab
-                        </h1>
+                        <img src="assets/Hogist/17.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Kebab</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 17 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1600">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/18.png" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            Ice Cream
-                        </h1>
+                        <img src="assets/Hogist/18.png" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">Ice Cream</h1>
                     </div>
                 </div>
-                <div class="group bg-white flex flex-col  rounded-lg relative overflow-hidden">
-
+        
+                <!-- Card 18 -->
+                <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1700">
                     <div class="relative w-full h-[240px] overflow-hidden">
-
-                        <img src="assets/Hogist/14.jpg" alt="Dish 2"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-
-                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
-                        </div>
-
-                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2 ">
-                            BBQ
-                        </h1>
+                        <img src="assets/Hogist/14.jpg" alt="Dish 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+                        <h1 class="absolute bottom-1 left-2 text-md font-semibold text-white px-2">BBQ</h1>
                     </div>
                 </div>
             </div>
@@ -882,16 +717,16 @@
 
         <!-- We are proud of our clients -->
         <div class=" py-20 bg-black">
-            <h1 class="font-bold text-3xl text-center text-white ">Celebrating the Trust and Support of Our Amazing
+            <h1 class="font-bold text-3xl text-center text-white " data-aos="fade-down" data-aos-duration="1000">Celebrating the Trust and Support of Our Amazing
                 Clients!</h1>
             <div class="flex justify-center flex-col md:flex-row py-10 gap-10 md:gap-10 text-white">
-                <div class="flex  justify-center items-center  gap-5">
+                <div class="flex  justify-center items-center  gap-5" data-aos="fade-up" data-aos-duration="1000">
                     <img src="/assets/corporate.png" alt="" class="w-12">
                     <h1 class="font-semibold text-2xl">40 Corporate Clients</h1>
                     <!-- <p class="text-gray-500 font-semibold text-md">Great place to Work</p> -->
                 </div>
                 <div class="hidden md:block py-4 bg-white w-1 rounded-xl"></div>
-                <div class="flex  justify-center items-center  gap-5">
+                <div class="flex  justify-center items-center  gap-5" data-aos="fade-up" data-aos-duration="1000">
                     <img src="/assets/industrial.png" alt="" class="w-12">
                     <h1 class="font-semibold text-2xl">25 Industrial Clients</h1>
 
@@ -916,8 +751,8 @@
                     North and South Indian dishes,
                     including biryanis,curries, sweets, and regional specialties, make the wedding feast unforgettable.
                     Guests eagerly look forward to
-                    the dining experience, which reflects the family's culture and traditions. Similarly, corporate
-                    events
+                    the dining experience, which reflects the family's culture and traditions. Similarly, <span class="font-bold">corporate
+                    events</span>
                     demand a well-planned menu that
                     caters to diverse preferences, offering a mix of Indian and international cuisines to create a
                     sophisticated dining experience for
@@ -959,17 +794,17 @@
                 <span class="menu-item">Hogist</span>
             </div>
         </div>
-
+        <!-- form -->
         <div class="relative px-10 md:px-20 lg:px-40 py-10 h-full min-h-screen flex items-center bg-[url('/assets/Hogist/form.png')] bg-cover bg-center">
-            <div class="relative flex justify-end w-full">
-                <div class="w-full max-w-md bg-white/15 backdrop-blur-lg p-8 rounded-lg text-center border border-white/10">
+            <div class="relative flex justify-end w-full" data-aos="fade-right" data-aos-duration="1000">
+                <div class="w-full max-w-md bg-black backdrop-blur-lg p-8 rounded-lg text-center border border-white/10">
                     <h1 class="text-xl md:text-3xl font-bold my-4 text-[#dd0902]">Get Instant Quote</h1>
-                    <h1 class="text-xl md:text-3xl font-bold my-4 text-white">(Pax Starts From 20)</h1>
+                    <h1 class="text-lg md:text-2xl font-bold my-4 text-white">(Pax Starts From 50)</h1>
         
                     <form id="orderForm" class="flex flex-col gap-5 text-left">
                         <div>
                             <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="name" class="font-medium text-md">Name</label>
+                                <label for="name" class="font-semibold text-lg">Name</label>
                                 <span class="text-[#dd0902]">*</span>
                             </div>
                             <input type="text" id="name"
@@ -977,7 +812,7 @@
                         </div>
                         <div>
                             <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="number" class="font-medium text-md">Phone Number</label>
+                                <label for="number" class="font-semibold text-lg">Phone Number</label>
                                 <span class="text-[#dd0902]">*</span>
                             </div>
                             <input type="text" id="number"
@@ -985,7 +820,7 @@
                         </div>
                         <div>
                             <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="count" class="font-medium text-md">Count</label>
+                                <label for="count" class="font-semibold text-lg">Count</label>
                                 <span class="text-[#dd0902]">*</span>
                             </div>
                             <input type="number" id="count"
@@ -993,7 +828,7 @@
                         </div>
                         <div>
                             <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="location" class="font-medium text-md">Location</label>
+                                <label for="location" class="font-semibold text-lg">Location</label>
                                 <span class="text-[#dd0902]">*</span>
                             </div>
                             <input type="text" id="location"
@@ -1012,98 +847,44 @@
         </div>
         
 
-        <!-- Offer -->
-        <div class="grid lg:grid-cols-2 grid-cols-1 min-h-screen bg-[#000000] px-10  md:px-10  ">
-            <div class="flex items-center justify-center">
-                <img src="assets/Hogist/90.jpg" alt="Burger Image" class="h-full w-full">
-            </div>
-
-
-            <div class="relative flex justify-center items-center">
-                <div
-                    class="w-full md:w-2/3 bg-white/15 backdrop-blur-lg p-8 rounded-lg text-center border border-white/10">
-                    <h1 class="text-xl md:text-3xl font-bold my-4 text-[#dd0902]">Get Instant Quote</h1>
-                    <h1 class="text-xl md:text-3xl font-bold my-4 text-white">(Pax Starts From 20)</h1>
-
-                    <form id="orderForm" class="flex flex-col gap-5  text-left">
-                        <div>
-                            <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="name" class="font-medium text-md">Name</label>
-                                <span class="text-[#dd0902]">*</span>
-                            </div>
-                            <input type="text" id="name"
-                                class="w-full p-2 rounded border border-gray-300 focus:outline-none" required>
-                        </div>
-                        <div>
-                            <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="name" class="font-medium text-md">Phone Number</label>
-                                <span class="text-[#dd0902]">*</span>
-                            </div>
-                            <input type="text" id="number"
-                                class="w-full p-2 rounded border border-gray-300 focus:outline-none" required
-                                pattern="\d{10}">
-                        </div>
-                        <div>
-                            <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="name" class="font-medium text-md">Count</label>
-                                <span class="text-[#dd0902]">*</span>
-                            </div>
-                            <input type="number" id="count"
-                                class="w-full p-2 rounded border border-gray-300 focus:outline-none" required min="1">
-                        </div>
-                        <div>
-                            <div class="flex gap-1 my-1 text-gray-400">
-                                <label for="name" class="font-medium text-md">Location</label>
-                                <span class="text-[#dd0902]">*</span>
-                            </div>
-                            <input type="text" id="location"
-                                class="w-full p-2 rounded border border-gray-300 focus:outline-none" required>
-                        </div>
-                        <div class="sm:col-span-2 flex justify-center">
-                            <button type="submit"
-                                class="uppercase py-4 px-8 bg-[#dd0902] text-white font-normal flex items-center gap-2 ">
-                                Submit Order
-                                <img src="assets/rightarrow.png" alt="" class="w-4 bg-white">
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        
+        
 
 
         <!-- para -->
         <div class="px-10 md:px-20 py-10 md:py-20 ">
-            <h1 class="text-3xl my-4 font-bold leading-[28px] text-center">Chennai’s Best Catering Service is at your
+            <h1 class="text-3xl my-4 font-bold leading-[28px] text-center" data-aos="fade-down" data-aos-duration="1000">Chennai’s Best Catering Service is at your
                 doorstep!</h1>
-            <h1 class="text-xl text-gray-500 my-6 font-semibold leading-[28px]  text-center">Flavors You Love, Delivered
+            <h1 class="text-xl text-gray-500 my-6 font-semibold leading-[28px]  text-center" data-aos="fade-down" data-aos-duration="1000">Flavors You Love, Delivered
                 Safely to Make Every Event Special!</h1>
-            <h1 class="text-md font-normal leading-[28px] text-justify my-2">
-                Struggling to book bulk, full-fledged meals for your events, office, or students? Worried about the
-                health and hygiene of your loved ones or employees? Worry no
-                more! At Hogist, we have got the perfect solution for all your food needs. Choose from a wide variety of
-                nutritious, flavourful menus curated by trusted and
-                reliable caterers. Enjoy mouth-watering meals without compromising on quality or hygiene—delivered right
-                to your doorstep, hassle-free!
-            </h1>
-            <h1 class="text-md font-normal leading-[28px] text-justify my-4">Hogist is Chennai’s go-to choice for fresh,
-                homemade food delivery that’s both customer-friendly and budget-friendly! We bring you the perfect blend
-                of wholesome,
-                delicious meals with on-time delivery, making bulk food orders effortless. Our home-cooked dishes are
-                packed with nutritious ingredients—more veggies, less starch,
-                and minimal fat—ensuring a healthier alternative to commercial meals. Prepared with love and natural
-                ingredients, our meals bring the comfort of home to your plate.
-                Whether it’s breakfast, lunch, or dinner, enjoy tasty, nutritious food at an unbeatable price—just a tap
-                away!
-            </h1>
-            <h1 class="text-md font-normal leading-[28px] text-justify my-4">
-                Make your event unforgettable with our hygienic, contactless, and on-time food delivery—right to your
-                doorstep! What makes Hogist special? You can now enjoy delicious,
-                homemade meals crafted by expert home chefs near you. Plus, our menu customization feature lets you
-                personalize your order to suit your taste and dietary needs. It’s
-                a game-changer, especially for elderly individuals who require specific ingredients for their health.
-                Fresh, healthy, and tailor-made meals—just a click away!
-            </h1>
+            <div class="" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-md font-normal leading-[28px] text-justify my-2">
+                    Struggling to book bulk, full-fledged meals for your events, office, or students? Worried about the
+                    health and hygiene of your loved ones or employees? Worry no
+                    more! At Hogist, we have got the perfect solution for all your food needs. Choose from a wide variety of
+                    nutritious, flavourful menus curated by trusted and
+                    reliable caterers. Enjoy mouth-watering meals without compromising on quality or hygiene—delivered right
+                    to your doorstep, hassle-free!
+                </h1>
+                <h1 class="text-md font-normal leading-[28px] text-justify my-4">Hogist is Chennai’s go-to choice for fresh,
+                    homemade food delivery that’s both customer-friendly and budget-friendly! We bring you the perfect blend
+                    of wholesome,
+                    delicious meals with on-time delivery, making bulk food orders effortless. Our home-cooked dishes are
+                    packed with nutritious ingredients—more veggies, less starch,
+                    and minimal fat—ensuring a healthier alternative to commercial meals. Prepared with love and natural
+                    ingredients, our meals bring the comfort of home to your plate.
+                    Whether it’s breakfast, lunch, or dinner, enjoy tasty, nutritious food at an unbeatable price—just a tap
+                    away!
+                </h1>
+                <h1 class="text-md font-normal leading-[28px] text-justify my-4">
+                    Make your event unforgettable with our hygienic, contactless, and on-time food delivery—right to your
+                    doorstep! What makes Hogist special? You can now enjoy delicious,
+                    homemade meals crafted by expert home chefs near you. Plus, our menu customization feature lets you
+                    personalize your order to suit your taste and dietary needs. It’s
+                    a game-changer, especially for elderly individuals who require specific ingredients for their health.
+                    Fresh, healthy, and tailor-made meals—just a click away!
+                </h1>
+            </div>
         </div>
         <!-- testimonial -->
         <div class="relative flex w-full min-h-screen bg-black flex-col">
@@ -1117,13 +898,13 @@
             <!-- Swiper Section (Using Grid) -->
             <div class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 p-4 items-center lg:px-40 xl:px-60">
                 <div></div>
-                <div class="flex justify-center items-center flex-col">
+                <div class="flex justify-center items-center flex-col" data-aos="fade-down" data-aos-duration="1000">
                     <div class="flex items-center gap-2 justify-center">
                         <img src="assets/dinner.png" alt="" class="w-5">
-                        <p class="text-orange-400 text-lg font-bold uppercase ">Testimonials</p>
+                        <p class="text-orange-400 text-lg font-bold uppercase " >Testimonials</p>
                         <img src="assets/dinner.png" alt="" class="w-5">
                     </div>
-                    <h1 class="text-4xl font-bold text-center my-6 text-white">What our Clients Say</h1>
+                    <h1 class="text-4xl font-bold text-center my-6 text-white" data-aos="fade-down" data-aos-duration="1000">What our Clients Say</h1>
                     <div class="swiper mySwiper testimonial-swiper w-full max-w-2xl">
                         <div class="swiper-wrapper">
                             <!-- Slide 1 -->
@@ -1297,12 +1078,12 @@
 
         <!-- blog -->
         <div class="bg-gray-100 py-10 px-10 lg:px-0">
-            <div class="flex items-center gap-2 justify-center">
+            <div class="flex items-center gap-2 justify-center" data-aos="fade-down" data-aos-duration="1000">
                 <img src="assets/dinner.png" alt="" class="w-5">
                 <p class="text-orange-400 text-lg font-bold uppercase ">Latest News</p>
                 <img src="assets/dinner.png" alt="" class="w-5">
             </div>
-            <h1 class="text-4xl font-bold text-center my-4">Our Latest Food News</h1>
+            <h1 class="text-4xl font-bold text-center my-4" data-aos="fade-down" data-aos-duration="1000">Our Latest Food News</h1>
 
             <div class="relative flex justify-center items-center my-8">
                 <img src="assets/burger.png" alt="Burger"
@@ -1568,36 +1349,46 @@
         <!-- address -->
         <div class="bg-[#010f1c] py-10 px-10 md:px-20 pb-32">
             <div
-                class="grid  grid-cols-1  lg:grid-cols-3  items-center gap-5 py-12 lg:mx-10 bg-orange-500 rounded-2xl my-10 p-5">
-                <div class="flex items-center lg:justify-center gap-4">
-                    <div class=" bg-white rounded-full p-2">
-                        <img src="assets/map.png" alt="" class="w-6 h-6  ">
-                    </div>
-                    <div class="flex flex-col ">
-                        <p class="font-medium text-md text-white ">Address</p>
-                        <h1 class="font-medium text-xl text-white ">2nd Floor, Kakani Towers, No:34 Khader Nawaz Khan
-                            Road,Nungambakkam, Chennai 600 006.</h1>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 lg:justify-center ">
-                    <div class=" bg-white rounded-full p-2">
-                        <img src="assets/email.png" alt="" class="w-6 h-6  ">
-                    </div>
-                    <div class="flex flex-col ">
-                        <p class="font-medium text-md text-white ">Send Email</p>
-                        <h1 class="font-medium text-xl text-white ">Support@hogist.com</h1>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 lg:justify-center ">
-                    <div class=" bg-white rounded-full p-2">
-                        <img src="assets/viber.png" alt="" class="w-6 h-6  ">
-                    </div>
-                    <div class="flex flex-col ">
-                        <p class="font-medium text-md text-white ">Call Emergency</p>
-                        <h1 class="font-medium text-xl text-white ">+91-99626-67733</h1>
-                    </div>
-                </div>
-            </div>
+    class="grid grid-cols-1 lg:grid-cols-3 items-center gap-5 py-12 bg-orange-500 rounded-2xl my-10 p-5">
+    
+    <!-- Address -->
+    <div class="flex items-center lg:justify-center gap-4 w-full">
+        <div class="bg-white p-2 rounded-full">
+            <img src="assets/map.png" alt="Map Icon" class="w-6 h-6">
+        </div>
+        <div class="flex flex-col">
+            <p class="font-medium text-md text-white">Address</p>
+            <h1 class="font-medium text-lg text-white flex flex-col">
+                2nd Floor, Kakani Towers, 
+                <span>No:34 Khader Nawaz Khan Road,</span>
+                <span></span> Nungambakkam, Chennai 600 006.</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-center gap-4 lg:justify-center">
+        <div class="bg-white rounded-full p-2">
+            <img src="assets/email.png" alt="Email Icon" class="w-6 h-6">
+        </div>
+        <div class="flex flex-col ">
+            <p class="font-medium text-md text-white">Send Email</p>
+            <h1 class="font-medium text-lg text-white">Support@hogist.com</h1>
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="flex items-center gap-4 lg:justify-center">
+        <div class="bg-white rounded-full p-2">
+            <img src="assets/viber.png" alt="Phone Icon" class="w-6 h-6">
+        </div>
+        <div class="flex flex-col">
+            <p class="font-medium text-md text-white">Call Emergency</p>
+            <h1 class="font-medium text-lg text-white">+91-99626-67733</h1>
+        </div>
+    </div>
+</div>
+
 
 
             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-10">
