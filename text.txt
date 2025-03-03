@@ -1,0 +1,100 @@
+<div class="w-full relative flex items-center z-10 px-4">
+                <div class="swiper banner-swiper flex items-center w-full">
+                    <div class="swiper-wrapper flex items-center w-full pb-20 pt-6 gap-2">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide flex items-center justify-between w-full">
+                            <div class="text-white w-full md:w-1/2 md:pl-10">
+                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
+                                    data-aos="fade-down" data-aos-duration="1200">
+                                    Welcome Hogist
+                                </p>
+                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 leading-tight uppercase px-1"
+                                    data-aos="fade-right" data-aos-duration="1200">
+                                    Best Catering Services in Chennai
+                                </h1>
+                                <button
+                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
+                                    data-aos="fade-up" data-aos-duration="1200">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
+                                data-aos="fade-left" data-aos-duration="1200">
+                                <img src="assets/Hogist/banner3.png" alt="Crispy Wings" class="w-[600px] h-[600px]">
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide flex items-center justify-between w-full">
+                            <div class="text-white w-full md:w-1/2 md:pl-10">
+                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
+                                    data-aos="fade-down" data-aos-duration="1200">
+                                    Welcome Fresheat
+                                </p>
+                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 leading-tight uppercase"
+                                    data-aos="fade-right" data-aos-duration="1200">
+                                    Effortless Bulk Food Ordering Online
+                                </h1>
+                                <button
+                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
+                                    data-aos="fade-up" data-aos-duration="1200">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
+                                data-aos="fade-left" data-aos-duration="1200">
+                                <img src="assets/Hogist/banner1.png" alt="Food Ordering" class="w-[600px] h-[600px]">
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide flex items-center justify-between w-full">
+                            <div class="text-white w-full md:w-1/2 md:pl-10">
+                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
+                                    data-aos="fade-down" data-aos-duration="1200">
+                                    Welcome Fresheat
+                                </p>
+                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 uppercase "
+                                    data-aos="fade-right" data-aos-duration="1200">
+                                    Your One-Click Destination for Deliciousness
+                                </h1>
+                                <button
+                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
+                                    data-aos="fade-up" data-aos-duration="1200">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
+                                data-aos="fade-left" data-aos-duration="1200">
+                                <img src="assets/Hogist/banner2.png" alt="Deliciousness" class="w-[600px] h-[600px]">
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide flex items-center justify-between w-full" data-aos="zoom-in">
+                            <div class="text-white w-full md:w-1/2 md:pl-10">
+                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
+                                    data-aos="fade-down" data-aos-duration="1200">
+                                    Welcome Fresheat
+                                </p>
+                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 uppercase"
+                                    data-aos="fade-right" data-aos-duration="1200">
+                                    Customized Menu Ordering at Your Fingertips!
+                                </h1>
+                                <button
+                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
+                                    data-aos="fade-up" data-aos-duration="1200">
+                                    ORDER NOW
+                                </button>
+                            </div>
+                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
+                                data-aos="fade-left" data-aos-duration="1200">
+                                <img src="assets/Hogist/banner4.png" alt="Customized Ordering"
+                                    class="w-[600px] h-[600px]">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>

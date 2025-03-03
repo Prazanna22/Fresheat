@@ -4,14 +4,16 @@
     
 }
 ::-webkit-scrollbar-track {
-    background: #ffe2b1;
+    background: #ffffff;
    
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f36805;
+    background: #dd0902;
     border-radius: 10px;
 }
+
+  
 .banner-bg {
     background-image: url('assets/bg4.jpg');
     background-size: cover;
