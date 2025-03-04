@@ -1,100 +1,106 @@
-<div class="w-full relative flex items-center z-10 px-4">
-                <div class="swiper banner-swiper flex items-center w-full">
-                    <div class="swiper-wrapper flex items-center w-full pb-20 pt-6 gap-2">
+ <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center">
 
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide flex items-center justify-between w-full">
-                            <div class="text-white w-full md:w-1/2 md:pl-10">
-                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
-                                    data-aos="fade-down" data-aos-duration="1200">
-                                    Welcome Hogist
-                                </p>
-                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 leading-tight uppercase px-1"
-                                    data-aos="fade-right" data-aos-duration="1200">
-                                    Best Catering Services in Chennai
-                                </h1>
-                                <button
-                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
-                                    data-aos="fade-up" data-aos-duration="1200">
-                                    ORDER NOW
-                                </button>
-                            </div>
-                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
-                                data-aos="fade-left" data-aos-duration="1200">
-                                <img src="assets/Hogist/banner3.png" alt="Crispy Wings" class="w-[600px] h-[600px]">
-                            </div>
+            <div class="w-1/3 md:w-1/5 flex justify-center items-center px-6 py-6">
+                <img src="assets/Hogist/red logo.png" alt="Logo" class="w-52">
+            </div>
+
+            <div class=" hidden sm:block w-1/2 md:w-4/5 bg-white lg:bg-black text-white">
+
+                <div class="bg-[#dd0902] text-white py-4  text-sm hidden lg:flex overflow-hidden">
+                    <div class="marquee-container">
+                        <div class="marquee text-lg flex gap-20 mx-10">                       
+                            <span>Hogist</span>
+                            <span>Serving Success for 6 Years</span>
+                            <span>ISO Standards Obtained in the year of 2022</span>
                         </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide flex items-center justify-between w-full">
-                            <div class="text-white w-full md:w-1/2 md:pl-10">
-                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
-                                    data-aos="fade-down" data-aos-duration="1200">
-                                    Welcome Fresheat
-                                </p>
-                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 leading-tight uppercase"
-                                    data-aos="fade-right" data-aos-duration="1200">
-                                    Effortless Bulk Food Ordering Online
-                                </h1>
-                                <button
-                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
-                                    data-aos="fade-up" data-aos-duration="1200">
-                                    ORDER NOW
-                                </button>
-                            </div>
-                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
-                                data-aos="fade-left" data-aos-duration="1200">
-                                <img src="assets/Hogist/banner1.png" alt="Food Ordering" class="w-[600px] h-[600px]">
-                            </div>
+                        <div class="marquee text-xl flex gap-20 mx-10">
+                            <span>Hogist</span>
+                            <span>Serving Success for 6 Years</span>
+                            <span>ISO Standards Obtained in the year of 2022</span>
                         </div>
-
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide flex items-center justify-between w-full">
-                            <div class="text-white w-full md:w-1/2 md:pl-10">
-                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
-                                    data-aos="fade-down" data-aos-duration="1200">
-                                    Welcome Fresheat
-                                </p>
-                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 uppercase "
-                                    data-aos="fade-right" data-aos-duration="1200">
-                                    Your One-Click Destination for Deliciousness
-                                </h1>
-                                <button
-                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
-                                    data-aos="fade-up" data-aos-duration="1200">
-                                    ORDER NOW
-                                </button>
-                            </div>
-                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
-                                data-aos="fade-left" data-aos-duration="1200">
-                                <img src="assets/Hogist/banner2.png" alt="Deliciousness" class="w-[600px] h-[600px]">
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide flex items-center justify-between w-full" data-aos="zoom-in">
-                            <div class="text-white w-full md:w-1/2 md:pl-10">
-                                <p class="text-3xl sm:text-4xl font-extrabold text-orange-500 uppercase"
-                                    data-aos="fade-down" data-aos-duration="1200">
-                                    Welcome Fresheat
-                                </p>
-                                <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-6 uppercase"
-                                    data-aos="fade-right" data-aos-duration="1200">
-                                    Customized Menu Ordering at Your Fingertips!
-                                </h1>
-                                <button
-                                    class="mt-4 bg-[#dd0902] hover:bg-red-700 font-semibold text-white px-6 py-2 rounded-lg text-md shadow-md transition"
-                                    data-aos="fade-up" data-aos-duration="1200">
-                                    ORDER NOW
-                                </button>
-                            </div>
-                            <div class="relative hidden md:flex w-0 md:w-1/2 justify-center overflow-hidden" data-tilt
-                                data-aos="fade-left" data-aos-duration="1200">
-                                <img src="assets/Hogist/banner4.png" alt="Customized Ordering"
-                                    class="w-[600px] h-[600px]">
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+
+
+                <div class="flex justify-end lg:justify-between items-center px-6 py-3">
+
+                    <nav class="lg:flex space-x-6 hidden">
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Home</a>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">About Us <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-[#dd0902] font-medium hover:text-white text-black">About
+                                    Us 1</a>
+                                <a href=""
+                                    class="block px-3 py-2 hover:bg-[#dd0902] font-medium hover:text-white text-black">About
+                                    Us 2</a>
+                            </div>
+                        </div>
+                       
+                        <div class="relative group">
+                            <a href="#blog" class="flex items-center gap-1 hover:text-red-500">Blog</a>
+                        </div>
+                        <!-- <div class="relative group">
+                            <a href="#" class="flex items-center gap-1 hover:text-red-500">Contact Us <span>+</span></a>
+                            <div
+                                class="absolute left-0 top-full mt-2 bg-white shadow-md w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-[#dd0902] font-medium hover:text-white text-black">Contact
+                                    Us 01</a>
+                                <a href="#"
+                                    class="block px-3 py-2 hover:bg-[#dd0902] font-medium hover:text-white text-black">Contact
+                                    Us 02</a>
+                            </div>
+                        </div> -->
+                    </nav>
+
+                    <div class=" flex gap-6 text-gray-700 text-lg">
+                        <button class="text-white text-sm font-medium hover:text-[#dd0902]">Contact Us</button>
+                        <button
+                            class="py-2 px-8 bg-white text-black text-sm font-medium rounded-md hover:text-white border-2 border-white hover:bg-black"
+                            id="getPricingBtn">Get Pricing</button>
+                    </div>
+                    <!-- Popup Form -->
+                    <div id="pricingPopup"
+                        class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden">
+                        <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
+                            <h1 class="text-xl md:text-3xl font-bold my-4 text-[#dd0902] text-center">Get Instant Quote</h1>
+                            <h1 class="text-lg md:text-2xl font-bold my-4 text-black text-center">(Pax Starts From 50)</h1>
+                            <button id="closePopup"
+                                class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl">&times;</button>
+                            <h2 class="text-xl font-semibold mb-4">Get Pricing</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Name</label>
+                                    <input type="text" class="w-full p-2 border rounded-md"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Mobile</label>
+                                    <input type="tel" class="w-full p-2 border rounded-md"
+                                        placeholder="Enter your mobile number">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Message</label>
+                                    <input class="w-full p-2 border rounded-md"
+                                        placeholder="Enter your message"/>
+                                        
+                                </div>
+                                <button type="submit"
+                                    class="w-full py-2 bg-[#dd0902] text-white font-medium rounded-md">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </div>
+    </header>
+
+
+add responsive ,in mobile view create button inside  home,about+ dropdown,blog and contact us and get pricing button 
