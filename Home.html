@@ -362,7 +362,7 @@
         </div> -->
 
         <!-- aboutus -->
-        <div class="flex bg-white mx-5 sm:mx-10 md:mx-20 xl:mx-0 py-8 xl:py-0 rounded-lg my-6">
+         <div class="flex bg-white mx-5 sm:mx-10 md:mx-20 xl:mx-0 py-8 xl:py-0 rounded-lg my-6">
             <div class="relative hidden xl:block w-1/4">
                 <img src="assets/Hogist/Habout4.jpg" alt="" class="w-[700px] h-[550px]">
             </div>
@@ -498,7 +498,6 @@
                         </div>
                     </div>
                 </a>
-
                 <!-- Card 2 -->
                 <a href="https://hogist.com/hogist-menu-bank/">
                     <div class="group bg-white flex flex-col rounded-lg relative overflow-hidden" data-aos="fade-up"
@@ -820,10 +819,9 @@
 
             </div>
         </div>
-
-
+        
         <!-- Menu -->
-        <div class="bg-white mx-10 sm:mx-20 rounded-3xl outline-none py-10">
+         <div class="bg-white mx-10 sm:mx-20 rounded-3xl outline-none py-10">
             <div class="flex items-center gap-2 justify-center">
                 <img src="assets/dinner.png" alt="" class="w-5">
                 <p class="text-orange-400 text-lg font-bold uppercase ">Food Menu</p>
@@ -1001,25 +999,25 @@
 
 
         <!-- We are proud of our clients -->
-        <div class=" py-20 bg-black px-10">
-            <h1 class="font-bold text-2xl md:text-3xl text-center text-white " data-aos="fade-down"
-                data-aos-duration="1000">
-                Celebrating the Trust and Support of Our Amazing
-                Clients!</h1>
-            <div class="flex justify-center flex-col md:flex-row py-10 gap-10 md:gap-10 text-white">
-                <div class="flex  justify-center items-center  gap-5" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="/assets/corporate.png" alt="" class="w-12">
-                    <h1 class="font-semibold text-2xl">40 Corporate Clients</h1>
-                    <!-- <p class="text-gray-500 font-semibold text-md">Great place to Work</p> -->
+        <div class="py-20 bg-white px-10 relative bg-cover bg-center bg-no-repeat" style="background-image: url('assets/bg2.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+            <h1 class="font-extrabold text-3xl md:text-5xl text-center text-white my-10" data-aos="fade-down" data-aos-duration="1000">
+                Celebrating the Trust and Support of Our Amazing Clients
+            </h1>
+          
+            <div class="flex justify-center flex-col md:flex-row py-10 gap-10 md:gap-20 text-gray-200 z-10">
+                <div class="flex justify-center items-center gap-5" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/assets/corporate.png" alt="" class="w-10">
+                    <h1 class="font-semibold text-2xl md:text-3xl"><span id="corporate-count">0</span> Corporate Clients</h1>
                 </div>
                 <div class="hidden md:block py-4 bg-white w-1 rounded-xl"></div>
-                <div class="flex  justify-center items-center  gap-5" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="/assets/industrial.png" alt="" class="w-12">
-                    <h1 class="font-semibold text-2xl">25 Industrial Clients</h1>
-
+                <div class="flex justify-center items-center gap-5" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/assets/industrial.png" alt="" class="w-10">
+                    <h1 class="font-semibold text-2xl md:text-3xl"><span id="industrial-count">0</span> Industrial Clients</h1>
                 </div>
             </div>
         </div>
+        
 
 
         <!-- blog -->
@@ -1998,6 +1996,38 @@
         });
 
         AOS.init();
+
+        function animateCounter(id, target) {
+        let count = 0;
+        const duration = 3000; // Animation duration in milliseconds
+        const intervalTime = 30; // Interval speed
+        const increment = target / (duration / intervalTime);
+        const counterElement = document.getElementById(id);
+
+        function updateCounter() {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(counter);
+            }
+            counterElement.textContent = Math.floor(count);
+        }
+
+        const counter = setInterval(updateCounter, intervalTime);
+    }
+
+    function startCounters(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter("corporate-count", 40);
+                animateCounter("industrial-count", 25);
+                observer.unobserve(entry.target); // Stop observing after animation starts
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(startCounters, { threshold: 0.5 });
+    observer.observe(document.querySelector(".py-20"));
     </script>
 
 
