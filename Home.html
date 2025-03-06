@@ -7,6 +7,7 @@
     <title>Hogist</title>
 
 
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -15,7 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 
 <body>
@@ -1130,8 +1130,7 @@
                         </div>
                         <div class="sm:col-span-2 flex justify-center">
                             <button
-                                class="uppercase py-2 px-4 bg-[#dd0902] text-white font-medium mt-5 flex items-center gap-2 border-2 border-[#dd0902] hover:text-[#dd0902] hover:bg-transparent "
-                                data-aos="fade-bottom" data-aos-duration="1800">
+                                class="uppercase py-2 px-4 bg-[#dd0902] text-white font-medium mt-5 flex items-center gap-2 border-2 border-[#dd0902] hover:text-[#dd0902] hover:bg-transparent ">
                                 submit order
                             </button>
                         </div>
@@ -1847,220 +1846,122 @@
     </button>
 
     <script>
-        const backToTopButton = document.getElementById("backToTop");
+        document.addEventListener("DOMContentLoaded", () => {
+    const backToTopButton = document.getElementById("backToTop");
+    const pricingPopup = document.getElementById("pricingPopup");
+    const getPricingBtn = document.getElementById("getPricingBtn");
+    const closePopup = document.getElementById("closePopup");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const closeMobileMenu = document.getElementById("closeMobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const aboutToggle = document.getElementById("aboutToggle");
+    const aboutDropdown = document.getElementById("aboutDropdown");
+    const mobileGetPricingBtn = document.getElementById("mobileGetPricingBtn");
+    const orderForm = document.getElementById("orderForm");
+    
+    // Show/hide Back to Top button
+    if (backToTopButton) {
+        window.addEventListener("scroll", () => {
+            backToTopButton.classList.toggle("hidden", window.scrollY <= 300);
+        });
 
-        // Show/hide button on scroll
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.remove("hidden");
-            } else {
-                backToTopButton.classList.add("hidden");
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
+    // Initialize Swiper instances
+    const swipers = [
+        { selector: ".banner-swiper", options: { slidesPerView: 1, loop: true, autoplay: { delay: 3000, disableOnInteraction: false } } },
+        { selector: ".custom-swiper", options: { loop: true, slidesPerView: 4, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 } }, autoplay: { delay: 3000, disableOnInteraction: false } } },
+        { selector: ".menu-swiper", options: { loop: true, slidesPerView: 3, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } },
+        { selector: ".gallery-swiper", options: { loop: true, slidesPerView: 5, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } },
+        { selector: ".mySwiper", options: { loop: true, slidesPerView: 1, spaceBetween: 20, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800, navigation: { nextEl: ".next", prevEl: ".prev" } } },
+        { selector: ".client-swiper", options: { loop: true, slidesPerView: 5, spaceBetween: 10, breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 6 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } }
+    ];
+    swipers.forEach(({ selector, options }) => {
+        if (document.querySelector(selector)) new Swiper(selector, options);
+    });
+
+    // Order form validation
+   if (orderForm) {
+    orderForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const nameInput = document.getElementById("name");
+        const numberInput = document.getElementById("number");
+        const countInput = document.getElementById("count");
+        const locationInput = document.getElementById("location");
+
+        const name = nameInput.value.trim();
+        const number = numberInput.value.trim();
+        const count = countInput.value.trim();
+        const location = locationInput.value.trim();
+
+        if (!name || !number || !count || !location) return alert("All fields are required!");
+        if (!/^\d{10}$/.test(number)) return alert("Please enter a valid 10-digit number.");
+        if (parseInt(count) < 20) return alert("Count must be at least 20.");
+
+        alert("Order submitted successfully!");
+
+        // Clear input fields after successful submission
+        nameInput.value = "";
+        numberInput.value = "";
+        countInput.value = "";
+        locationInput.value = "";
+    });
+}
+
+
+    // Vanilla Tilt effect
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), { max: 10, speed: 400, "max-glare": 0.3 });
+
+    // Pricing Popup
+    if (getPricingBtn && pricingPopup) {
+        getPricingBtn.addEventListener("click", () => pricingPopup.classList.remove("hidden"));
+        closePopup?.addEventListener("click", () => pricingPopup.classList.add("hidden"));
+        window.addEventListener("click", (e) => { if (e.target === pricingPopup) pricingPopup.classList.add("hidden"); });
+    }
+
+    // Mobile menu toggle
+    mobileMenuBtn?.addEventListener("click", () => mobileMenu?.classList.remove("translate-x-full"));
+    closeMobileMenu?.addEventListener("click", () => mobileMenu?.classList.add("translate-x-full"));
+    aboutToggle?.addEventListener("click", () => aboutDropdown?.classList.toggle("hidden"));
+
+    mobileGetPricingBtn?.addEventListener("click", () => {
+        mobileMenu?.classList.add("translate-x-full");
+        setTimeout(() => pricingPopup?.classList.remove("hidden"), 300);
+    });
+
+    AOS.init();
+
+    // Counter Animation
+    function animateCounter(id, target) {
+        let count = 0, intervalTime = 30, increment = target / (3000 / intervalTime);
+        const counterElement = document.getElementById(id);
+        if (!counterElement) return;
+        const counter = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(counter);
             }
+            counterElement.textContent = Math.floor(count);
+        }, intervalTime);
+    }
+
+    function startCounters(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) 
+            animateCounter("corporate-count", 40);
+            animateCounter("industrial-count", 25);
         });
+    }
+    
+    const observer = new IntersectionObserver(startCounters, { threshold: 0.5 });
+    const counterElement = document.getElementById("corporate-count");
+    if (counterElement) observer.observe(counterElement);
+});
 
-        // Scroll to top when button is clicked
-        backToTopButton.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-        var bannerSwiper = new Swiper(".banner-swiper", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-
-        });
-
-        new Swiper(".custom-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            slidesPerView: 4,
-            spaceBetween: 30,
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                480: { slidesPerView: 1 },
-                640: { slidesPerView: 1.5 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 4 },
-            }
-
-        });
-        new Swiper(".menu-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loopFillGroupWithBlank: 3,
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                540: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            }
-        });
-        new Swiper(".gallery-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            slidesPerView: 5,
-            spaceBetween: 30,
-            loopFillGroupWithBlank: 3,
-            breakpoints: {
-                320: { slidesPerView: 2 },
-                540: { slidesPerView: 3 },
-                768: { slidesPerView: 4 },
-                1024: { slidesPerView: 5 },
-            }
-        });
-        new Swiper(".mySwiper", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: ".next",
-                prevEl: ".prev",
-            },
-        });
-        new Swiper(".client-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            slidesPerView: 5,
-            spaceBetween: 10,
-            loopFillGroupWithBlank: 3,
-            breakpoints: {
-                320: { slidesPerView: 2 },
-                540: { slidesPerView: 3 },
-                768: { slidesPerView: 4 },
-                1024: { slidesPerView: 6 },
-            }
-        });
-        document.getElementById("orderForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            let name = document.getElementById("name").value.trim();
-            let number = document.getElementById("number").value.trim();
-            let count = document.getElementById("count").value.trim();
-            let location = document.getElementById("location").value.trim();
-
-            if (name === "" || number === "" || count === "" || location === "") {
-                alert("All fields are required!");
-                return;
-            }
-
-            if (!/^\d{10}$/.test(number)) {
-                alert("Please enter a valid 10-digit number.");
-                return;
-            }
-
-            if (parseInt(count) <= 0) {
-                alert("Count must be at least 1.");
-                return;
-            }
-
-            alert("Order submitted successfully!");
-        });
-
-
-        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-            max: 10,
-            speed: 400,
-            "max-glare": 0.3
-        });
-
-
-        const getPricingBtn = document.getElementById('getPricingBtn');
-        const pricingPopup = document.getElementById('pricingPopup');
-        const closePopup = document.getElementById('closePopup');
-
-        getPricingBtn.addEventListener('click', () => {
-            pricingPopup.classList.remove('hidden');
-        });
-
-        closePopup.addEventListener('click', () => {
-            pricingPopup.classList.add('hidden');
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === pricingPopup) {
-                pricingPopup.classList.add('hidden');
-            }
-        });
-        document.getElementById('mobileMenuBtn').addEventListener('click', function () {
-            document.getElementById('mobileMenu').classList.remove('translate-x-full');
-        });
-        document.getElementById('closeMobileMenu').addEventListener('click', function () {
-            document.getElementById('mobileMenu').classList.add('translate-x-full');
-        });
-        document.getElementById('aboutToggle').addEventListener('click', function () {
-            document.getElementById('aboutDropdown').classList.toggle('hidden');
-        });
-        document.getElementById('mobileGetPricingBtn').addEventListener('click', function () {
-            document.getElementById('mobileMenu').classList.add('translate-x-full');
-            setTimeout(() => {
-                document.getElementById('pricingPopup').classList.remove('hidden');
-            }, 300);
-        });
-        document.getElementById('closePopup').addEventListener('click', function () {
-            document.getElementById('pricingPopup').classList.add('hidden');
-        });
-
-        AOS.init();
-
-        function animateCounter(id, target) {
-            let count = 0;
-            const duration = 3000; // Animation duration in milliseconds
-            const intervalTime = 30; // Interval speed
-            const increment = target / (duration / intervalTime);
-            const counterElement = document.getElementById(id);
-
-            function updateCounter() {
-                count += increment;
-                if (count >= target) {
-                    count = target;
-                    clearInterval(counter);
-                }
-                counterElement.textContent = Math.floor(count);
-            }
-
-            const counter = setInterval(updateCounter, intervalTime);
-        }
-
-        function startCounters(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter("corporate-count", 40);
-                    animateCounter("industrial-count", 25);
-                    observer.unobserve(entry.target); // Stop observing after animation starts
-                }
-            });
-        }
-
-        const observer = new IntersectionObserver(startCounters, { threshold: 0.5 });
-        observer.observe(document.querySelector(".py-20"));
     </script>
 
 
