@@ -1,0 +1,105 @@
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const backToTopButton = document.getElementById("backToTop");
+    const pricingPopup = document.getElementById("pricingPopup");
+    const getPricingBtn = document.getElementById("getPricingBtn");
+    const closePopup = document.getElementById("closePopup");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const closeMobileMenu = document.getElementById("closeMobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const aboutToggle = document.getElementById("aboutToggle");
+    const aboutDropdown = document.getElementById("aboutDropdown");
+    const mobileGetPricingBtn = document.getElementById("mobileGetPricingBtn");
+    const orderForm = document.getElementById("orderForm");
+    
+    // Show/hide Back to Top button
+    if (backToTopButton) {
+        window.addEventListener("scroll", () => {
+            backToTopButton.classList.toggle("hidden", window.scrollY <= 300);
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
+    // Initialize Swiper instances
+    const swipers = [
+        { selector: ".banner-swiper", options: { slidesPerView: 1, loop: true, autoplay: { delay: 3000, disableOnInteraction: false } } },
+        { selector: ".custom-swiper", options: { loop: true, slidesPerView: 4, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 } }, autoplay: { delay: 3000, disableOnInteraction: false } } },
+        { selector: ".menu-swiper", options: { loop: true, slidesPerView: 3, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } },
+        { selector: ".gallery-swiper", options: { loop: true, slidesPerView: 5, spaceBetween: 30, breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } },
+        { selector: ".mySwiper", options: { loop: true, slidesPerView: 1, spaceBetween: 20, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800, navigation: { nextEl: ".next", prevEl: ".prev" } } },
+        { selector: ".client-swiper", options: { loop: true, slidesPerView: 5, spaceBetween: 10, breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 6 } }, autoplay: { delay: 3000, disableOnInteraction: false }, speed: 800 } }
+    ];
+    swipers.forEach(({ selector, options }) => {
+        if (document.querySelector(selector)) new Swiper(selector, options);
+    });
+
+    // Order form validation
+    if (orderForm) {
+        orderForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const number = document.getElementById("number").value.trim();
+            const count = document.getElementById("count").value.trim();
+            const location = document.getElementById("location").value.trim();
+            
+            if (!name || !number || !count || !location) return alert("All fields are required!");
+            if (!/^\d{10}$/.test(number)) return alert("Please enter a valid 10-digit number.");
+            if (parseInt(count) <= 0) return alert("Count must be at least 1.");
+            alert("Order submitted successfully!");
+        });
+    }
+
+    // Vanilla Tilt effect
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), { max: 10, speed: 400, "max-glare": 0.3 });
+
+    // Pricing Popup
+    if (getPricingBtn && pricingPopup) {
+        getPricingBtn.addEventListener("click", () => pricingPopup.classList.remove("hidden"));
+        closePopup?.addEventListener("click", () => pricingPopup.classList.add("hidden"));
+        window.addEventListener("click", (e) => { if (e.target === pricingPopup) pricingPopup.classList.add("hidden"); });
+    }
+
+    // Mobile menu toggle
+    mobileMenuBtn?.addEventListener("click", () => mobileMenu?.classList.remove("translate-x-full"));
+    closeMobileMenu?.addEventListener("click", () => mobileMenu?.classList.add("translate-x-full"));
+    aboutToggle?.addEventListener("click", () => aboutDropdown?.classList.toggle("hidden"));
+
+    mobileGetPricingBtn?.addEventListener("click", () => {
+        mobileMenu?.classList.add("translate-x-full");
+        setTimeout(() => pricingPopup?.classList.remove("hidden"), 300);
+    });
+
+    AOS.init();
+
+    // Counter Animation
+    function animateCounter(id, target) {
+        let count = 0, intervalTime = 30, increment = target / (3000 / intervalTime);
+        const counterElement = document.getElementById(id);
+        if (!counterElement) return;
+        const counter = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(counter);
+            }
+            counterElement.textContent = Math.floor(count);
+        }, intervalTime);
+    }
+
+    function startCounters(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) 
+            animateCounter("corporate-count", 40);
+            animateCounter("industrial-count", 25);
+        });
+    }
+    
+    const observer = new IntersectionObserver(startCounters, { threshold: 0.5 });
+    const counterElement = document.getElementById("corporate-count");
+    if (counterElement) observer.observe(counterElement);
+});
+
+    </script>
