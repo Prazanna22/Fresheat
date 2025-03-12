@@ -1,12 +1,12 @@
 
-
+@import "tailwindcss";
 /* roboto-300 - latin */
 @font-face {
     font-display: swap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: url('/assets/font/roboto-v47-latin/roboto-v47-latin-300.woff2') format('woff2'); 
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-300.woff2') format('woff2'); 
   }
   /* roboto-regular - latin */
   @font-face {
@@ -14,7 +14,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/font/roboto-v47-latin/roboto-v47-latin-regular.woff2') format('woff2'); 
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-regular.woff2') format('woff2'); 
   }
   /* roboto-500 - latin */
   @font-face {
@@ -22,7 +22,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: url('/assets/font/roboto-v47-latin/roboto-v47-latin-500.woff2') format('woff2'); 
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-500.woff2') format('woff2'); 
   }
   /* roboto-700 - latin */
   @font-face {
@@ -30,7 +30,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/font/roboto-v47-latin/roboto-v47-latin-700.woff2') format('woff2'); 
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-700.woff2') format('woff2'); 
   }
   /* roboto-800 - latin */
   @font-face {
@@ -38,7 +38,7 @@
         font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    src: url('/assets/font/roboto-v47-latin/roboto-v47-latin-800.woff2') format('woff2'); 
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-800.woff2') format('woff2'); 
   }
 
 
