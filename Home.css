@@ -1,6 +1,46 @@
+/* roboto-300 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-300.woff2') format('woff2'); 
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-regular.woff2') format('woff2'); 
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-500.woff2') format('woff2'); 
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-700.woff2') format('woff2'); 
+  }
+  /* roboto-800 - latin */
+  @font-face {
+    font-display: swap;
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    src: url('assets/font/roboto-v47-latin/roboto-v47-latin-800.woff2') format('woff2'); 
+  }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-html {
+
+ html {
     scroll-behavior: smooth;
 }
 body{
